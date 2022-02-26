@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2   
+    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2    
     - name: apt install dependency
       run: 
-        sudo apt-get -y install valgrind
-        sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev   
+        sudo apt-get -y install valgrind 
     - name: Dynamic Analysis
-      run: make dynamic_analysis -C 3_Implementation
+      run: make dynamiccheck -C 3_Implementation
 
  
