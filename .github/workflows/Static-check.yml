@@ -1,5 +1,5 @@
 name: Cppcheck
-
+ 
 on:
   push:
     branches: [ main ]
